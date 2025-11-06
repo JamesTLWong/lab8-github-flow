@@ -28,6 +28,7 @@ if __name__ == "__main__":
         choice = Console().input("[cyan]Which direction do you choose?[/cyan] ([yellow]left/right/[/yellow][red]exit[/red]): ")
         choice = choice.strip().lower()
         if choice == 'exit':
+            Console().print("You have escaped the forest. Goodbye.", style="red")
             break
         
         Console().print(step(choice, events), style="green")
